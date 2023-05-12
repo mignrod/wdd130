@@ -8,14 +8,21 @@ h1 {
     font-size: 60px;
     font-weight: bolder;
     text-align: center;
+    
+}
+
+a:hover {
+    background-color: white;
+    color: black;
 }
 
 h4 {
     color: white;
     font-weight: 100;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 480px;
     text-align: center;
+    font-size: 15px;
 }
 
 h3 {
@@ -33,15 +40,19 @@ h3 {
     padding: 10px;
     list-style: decimal;
     line-height: 30px;
-    max-width: 30%;
     text-align: left;
     font-weight: 900;
     font-size: 1em;
+    max-width: 90%;
     
 }
 
+.list_box {
+    max-width: 50%;
+    margin: 0 auto;
+}
 img {
-    width: 10%;
+    width: 20%;
     text-align: center;
 }
 
