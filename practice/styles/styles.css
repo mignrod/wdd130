@@ -7,11 +7,14 @@ nav {
     color: white;
     margin: 40px;
     font-size: 1.5em;
+    padding: 25px;
   }
   h1 {
     color: steelblue;
     text-align: center;
+    margin: 50px 0;
   }
+
   img {
     width: 80%;
     border: 4px solid steelblue;
@@ -22,11 +25,18 @@ nav {
     padding: 10px;
   
   }
-  nav, footer {
+  nav {
     background-color: steelblue;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 25px;
+  }
+
+  footer {
+    background-color: steelblue;
+    color: white;
+    padding: 25px;
+    text-align: center;
   }
   .main-para {
     font-size: 1.5em;
@@ -44,9 +54,14 @@ nav {
   footer p {
     font-size: 20px;
     margin: 20px auto;
+    padding: 25px;
   }
 
   a:hover {
     background-color: white;
     color: steelblue;
+  }
+
+  body {
+    margin: 0;
   }
