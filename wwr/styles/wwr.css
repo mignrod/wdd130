@@ -109,6 +109,7 @@ h4 {
     color: #FFFAFA;
     font-size: .8em;
     padding-bottom: 15px;
+    font-family: 'Castoro Titling', 'Helvetica', 'sans-serif';
 }
 
 footer a {
@@ -137,6 +138,7 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
+    font-family: 'Castoro Titling', 'Helvetica', 'sans-serif';
 }
 
 footer p a:hover {
@@ -161,4 +163,8 @@ footer .social img {
 
 main section img {
     box-sizing: border-box;
+}
+
+.mountains {
+    margin: 100px;
 }
