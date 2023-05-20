@@ -1,18 +1,27 @@
-footer {
+#content {
     background-color: gray;
     width: 100%;
+}
 
+#logo_web {
+    width: 100%;
+    margin: 0 auto;
 }
 
 #icon {
-    width: 220px;
-    border: solid black 12px; 
+    max-width: 15%;
     border-radius: 50%;
+    border: 10px solid rgb(65, 63, 63);
+    margin: 60px;
     padding: 0%;
-    margin: 90px;
-    
 }
 
-body {
+footer {
+    margin: 0 auto;
     text-align: center;
 }
+
+.box_icon {
+    padding-bottom: 0%;
+}
+
