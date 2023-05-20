@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=Castoro+Titling&family=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,10 +10,12 @@ nav a {
     text-align: center;
     color: #FFFAFA;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero_msg h1, #hero_msg h4 {
     text-align: center;
+    
 }
 
 .button-box {
@@ -27,6 +32,15 @@ main section {
 
 body {
     background-color: #FFFAFA;
+    font-family: "El Messiri", "Rock Salt", "Bradley Hand";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -37,12 +51,17 @@ nav a:hover {
     background-color: #8F5300;
     color: #FFFAFA;
     text-decoration: underline;
+    padding-top: 10px;
 }
 
 .book, .join {
-    background-color: #0059AB;
+    background-color: #8F5300;
     color: #FFFAFA;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -54,27 +73,42 @@ nav a:hover {
 
 #background {
     background-color: #4B8F8C;
+
 }
 
 .msg {
     background-color: #0059AB;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #4B8F8C;
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 .home-title {
     color: black;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
     color: black;
+    font-family: 'Castoro Titling', 'Helvetica', 'sans-serif';
 }
 
-.msg h2, .msg p {
+.msg h2 {
     color: #FFFAFA;
+    
+}
+
+.msg p {
+    color: #FFFAFA;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a {
@@ -94,6 +128,7 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -106,4 +141,24 @@ footer p {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #8F5300;
+}
+
+main section img {
+    box-sizing: border-box;
 }
