@@ -1,14 +1,10 @@
-main {
+body {
     max-width: 900px;
+     
     
 }
 
 .grid-container {
-    display: grid;
-    max-width: 900px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    border: 10px solid black;
-    background-color: gray;
+    background-color: gray;  
         
 }
