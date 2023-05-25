@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 body {
-    margin: 30px;
+
     max-width: 1200px;
+    font-family: 'Merriweather', serif;
 
 }
 
 .grid-container {
-    max-width: 1200px; 
+    max-width: 100%; 
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 1fr 1fr;
     
  
 }
@@ -21,7 +24,9 @@ body {
 
 h1 {
         text-align: center;
-        font-size: 120px;
+        font-size: 130px;
+        letter-spacing: 14px;
+      
         
 }
 
@@ -47,7 +52,12 @@ h1 {
     grid-row-end: inherit;
     align-self: end;
     text-align: center;
-    font-size: 45px;
+    font-size: 75px;
     color: crimson;
     padding-bottom: 20px;
+    letter-spacing: 25px;
+    padding: 40 auto;
+    max-width: 600px;
+
+
 }
