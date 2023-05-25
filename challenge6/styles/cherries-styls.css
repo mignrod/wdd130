@@ -1,0 +1,53 @@
+body {
+    margin: 30px;
+    max-width: 1200px;
+
+}
+
+.grid-container {
+    max-width: 1200px; 
+    display: grid;
+    grid-template-columns: 600px 600px;
+    
+ 
+}
+
+.cherrie-img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+
+}
+
+h1 {
+        text-align: center;
+        font-size: 120px;
+        
+}
+
+.title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        z-index: 1;
+        align-self: auto;
+        padding-top: 100px;
+        max-width: 100%;
+}
+
+.txt {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: gray;
+
+}
+
+.last {
+    grid-row-end: inherit;
+    align-self: end;
+    text-align: center;
+    font-size: 45px;
+    color: crimson;
+    padding-bottom: 20px;
+}
