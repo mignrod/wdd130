@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+}
+
+.grid-container {
+    background-color: brown;
+    display: grid;
+    /* max-width: 600px; */
+    grid-template-columns: 300px 300px 300px;
+    margin: 0 auto;
+    
+}
+
+.grid-item {
+    background-color: cadetblue;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-img {
+    background-color: cadetblue;
+    border: 2px solid black;
+    padding: 20px;
+    
+}
+
+.grid-img > img {
+    max-width: 100%;
+}
