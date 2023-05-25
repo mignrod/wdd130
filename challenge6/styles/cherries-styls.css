@@ -36,6 +36,7 @@ h1 {
         z-index: 1;
         align-self: auto;
         padding-top: 100px;
+        padding-left: 90px;
         max-width: 100%;
 }
 
@@ -52,12 +53,11 @@ h1 {
     grid-row-end: inherit;
     align-self: end;
     text-align: center;
-    font-size: 75px;
-    color: crimson;
-    padding-bottom: 20px;
-    letter-spacing: 25px;
-    padding: 40 auto;
-    max-width: 600px;
+    font-size: 70px;
+    color: rgb(202, 24, 60);
+    letter-spacing: 20px;
+    padding: 30px 60px;
+   
 
 
 }
