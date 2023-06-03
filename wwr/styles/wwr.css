@@ -17,7 +17,7 @@ nav a {
 
 #hero_msg h1, #hero_msg h4 {
     text-align: center;
-    color: #FFFAFA;
+    
     
 }
 
@@ -112,13 +112,13 @@ footer {
 }
 
 .home-title {
-    color: black;
+    color: #FFFAFA;
     font-size: 2em;
     margin-top: 10px;
 }
 
 h4 {
-    color: black;
+    color: #FFFAFA;
     font-family: 'Castoro Titling', 'Helvetica', 'sans-serif';
 }
 
@@ -270,8 +270,7 @@ nav {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
-        
+        color: black;
     }
 
     .rivers-card, .camping-card, .rapids-card { 
