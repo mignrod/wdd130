@@ -1,14 +1,25 @@
 body {
     width: 300px;
     margin: auto;
+    margin-top: 10px;
     background-color: black;
     
 }
 
 .hero-img {
     width: 100%;
-    
+    margin-bottom: -25px;
+}
 
-.card {
-    border-radius: 20%;
+
+img {
+    border-radius: 10% 10% 0 0;
+}
+
+.text-content {
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
