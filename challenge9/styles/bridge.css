@@ -1,0 +1,14 @@
+body {
+    width: 300px;
+    margin: auto;
+    background-color: black;
+    
+}
+
+.hero-img {
+    width: 100%;
+    
+
+.card {
+    border-radius: 20%;
+}
