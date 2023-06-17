@@ -247,6 +247,10 @@ nav {
     grid-row: 2/3;
 }
 
+#river_img {
+    height: 500px;
+    width: 100%;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
