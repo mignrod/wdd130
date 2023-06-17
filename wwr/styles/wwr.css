@@ -251,6 +251,80 @@ nav {
     height: 400px;
     width: 100%;
 }
+
+.river-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 95%;
+    gap: 40px;
+    margin: auto;
+    
+}
+
+.river-1 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #0059AB;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: #FFFAFA;
+}
+
+.river-1 > img {
+    grid-column: 2/10;
+    grid-row: 2/9;
+    width: 100%;
+    height: 100%;
+}
+
+.river-1 > h2 {
+    grid-column: 2/10;
+    grid-row: 9/11;
+    align-self: center;
+    
+}
+
+.river-1 > p {
+    grid-column: 11/20;
+    grid-row: 2/10;
+    align-self: center;
+    font-size: 25px;
+}
+
+.river-2 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #0059AB;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #FFFAFA;
+}
+
+.river-2 > img {
+    grid-column: 2/10;
+    grid-row: 2/9;
+    width: 100%;
+    height: 100%;
+}
+
+.river-2 > h2 {
+    grid-column: 2/10;
+    grid-row: 9/11;
+    align-self: center;
+    
+}
+
+.river-2 > p {
+    grid-column: 11/20;
+    grid-row: 2/10;
+    align-self: center;
+    font-size: 25px;
+
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
