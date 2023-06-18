@@ -289,7 +289,7 @@ nav {
 .river-1 > p {
     grid-column: 11/20;
     grid-row: 2/10;
-    align-self: justify;
+    align-self: center;
     font-size:20px;
     
 }
