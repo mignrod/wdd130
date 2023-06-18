@@ -273,56 +273,24 @@ nav {
     color: #FFFAFA;
 }
 
-.river-card {
-    background: transparent;
-    grid-column: 2/10;
-    grid-row: 2/9;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-.river-flip {
+  .river-1 img {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 10px #6f7364;
-  }
-  
-  .river-card:hover .river-flip {
-    transform: rotateY(180deg);
-  }
-  
-  .river-front, .river-back {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    
-  }
-  
-
-  .river-back {
-    transform: rotateY(180deg);
-    
-  }
-
-  .river-1 img {
-    width: 608px;
-    height: 713px;
+    grid-column: 2/10;
+    grid-row: 2/9;
   }
 
 .river-1 > h1 {
     grid-column: 2/10;
     grid-row: 9/11;
     align-self: center;
-    
 }
 
 .river-1 > p {
     grid-column: 11/20;
     grid-row: 2/10;
-    align-self: center;
-    font-size: 25px;
+    align-self: justify;
+    font-size:20px;
     
 }
 
@@ -336,41 +304,11 @@ nav {
     color: #FFFAFA;
 }
 
-.river-card2 {
-    background: transparent;
-    grid-column: 12/20;
-    grid-row: 2/9;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-.river-flip2 {
+  .river-2 img {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 10px #6f7364;
-  }
-  
-  .river-card2:hover .river-flip2 {
-    transform: rotateY(180deg);
-  }
-  
-  .river-front2, .river-back2 {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    
-  }
-
-  .river-back2 {
-    transform: rotateY(180deg);
-    
-  }
-
-  .river-2 img {
-    width: 608px;
-    height: 713px;
+    grid-column: 12/20;
+    grid-row: 2/9;
   }
 
 .river-2 > h1 {
@@ -398,43 +336,12 @@ nav {
     color: #FFFAFA;
 }
 
-.river-card3 {
-    background: transparent;
+.river-3 img {
     grid-column: 2/10;
     grid-row: 2/9;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-.river-flip3 {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 10px #6f7364;
-  }
-  
-  .river-card3:hover .river-flip3 {
-    transform: rotateY(180deg);
-  }
-  
-  .river-front3, .river-back3 {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    
-  }
-  
-  .river-back3 {
-    transform: rotateY(180deg);
-    
-  }
-
-  .river-3 img {
-    width: 608px;
-    height: 713px;
-  }
-
+}
 .river-3 > h1 {
     grid-column: 2/10;
     grid-row: 9/11;
@@ -450,7 +357,14 @@ nav {
 
 }
 
+.river-grid:hover img {
+    transition: 0.6s;
+    transform: scale(1.1);
+}
 
+.river-grid img {
+    box-shadow: 5px 5px 10px #6f7364;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
