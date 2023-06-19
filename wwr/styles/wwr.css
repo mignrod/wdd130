@@ -407,4 +407,21 @@ nav {
     footer {
         margin-top: 25px;
     }
+
+    .river-1, .river-2, .river-3 {
+        display: block;
+        height: auto;
+    }
+    .river-grid {
+        padding-top: 60px;
+    }
+
+    .river-grid img {
+        height: auto;
+    }
+
+    .river-grid:hover img {
+        transform: none;
+    }
+
 }
