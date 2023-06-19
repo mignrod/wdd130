@@ -418,6 +418,7 @@ nav {
 
     .river-grid img {
         height: auto;
+        width: 80%;
     }
 
     .river-grid:hover img {
