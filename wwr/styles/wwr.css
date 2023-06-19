@@ -415,7 +415,7 @@ button {
     margin-left: 0.5em;
   } 
   
-#feedback {
+ #feedback {
     background-color: antiquewhite;
     position: absolute;
     top: 0;
@@ -424,7 +424,7 @@ button {
     padding: .5em;
     display: none;      
 }
-.moveDown {
+ .moveDown {
     margin-top: 3em;
 }
 
