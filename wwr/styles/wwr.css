@@ -411,11 +411,11 @@ form {
     padding-left: 90px; 
   }
  
-  button {
+button {
     margin-left: 0.5em;
   } 
   
-  #feedback {
+#feedback {
     background-color: antiquewhite;
     position: absolute;
     top: 0;
