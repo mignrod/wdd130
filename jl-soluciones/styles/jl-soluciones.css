@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Kelly+Slab&display=swap');
+
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Chakra Petch', 'Kelly Slab';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.marker {
+    background-color: #0d0f0e;
+    color: #f8a501;
+    text-align: right;
+    font-size: 12px;
+    height: 20px;
+    margin: 0;
+    
+}
+
+.banner img {
+    width: 80px;
+    margin-top: -10px;
+    justify-content: center;
+}
+
+.banner {
+    font-family: "Kelly Slab";
+    background: rgba(59, 124, 182, 0.9);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+nav {
+    display: contents;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
