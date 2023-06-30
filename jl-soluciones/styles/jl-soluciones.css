@@ -15,22 +15,23 @@ body {
 .marker {
     background-color: #0d0f0e;
     color: #f8a501;
-    text-align: right;
     font-size: 12px;
-    height: 20px;
+    height: 30px;
     margin: 0;
-    
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .banner img {
-    width: 80px;
-    margin-top: -10px;
+    width: 90px;
+    margin-top: -15px;
     justify-content: center;
 }
 
 .banner {
     font-family: "Kelly Slab";
-    background: rgba(59, 124, 182, 0.9);
+    background: rgba(59, 124, 182, 0.8);
     font-size: 20px;
     display: flex;
     justify-content: space-around;
@@ -51,7 +52,7 @@ nav a {
 #hero {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: -77px;
+    margin-top: -80px;
 }
 
 #hero-box {
@@ -65,8 +66,31 @@ nav a {
     grid-row: 1/3;
     justify-self: center;
     align-self: center;
+    font-family: "Kelly Slab";
+    margin-top: -30px;
+    margin-left: 10px;
+    color: #0d0f0e;
+    font-size: 30px;
 }
 
 #hero-img {
     width: 100%;
+    height: 750px;
+}
+
+#hero-msg h3 {
+    text-align: center;
+}
+
+.button {
+    background: #3B7CB6;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+} 
+
+.hero-button {
+    text-align: center;
+    
 }
