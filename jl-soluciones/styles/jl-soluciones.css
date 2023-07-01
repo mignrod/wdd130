@@ -290,3 +290,115 @@ footer {
     background: #0d0f0e;
     text-decoration: underline;
 }
+
+
+/* Change the display according to the screen size 1100px */
+
+@media screen and (max-width: 1100px) {
+
+    .benefits {
+        font-size: medium;
+        
+    }
+
+    #hero-msg {
+        text-align: center;
+    }
+
+
+}
+
+/* Screen size 900px */
+
+@media screen and (max-width: 900px) {
+    .main-grid {
+        display: block;
+    }
+
+    .benefits {
+        background: #3B7CB6;
+    }
+
+    .msg-end {
+        margin-left: 450px;
+    }
+    
+}
+
+/* Screen less than 750px */
+
+@media screen and (max-width: 750px){
+    .benefit-img {
+        width: 80%;
+        height: 80%;
+        margin-left: 80px;
+    }
+
+    .flip-card-back img, .flip-card-front img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .flip-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .msg-end {
+        margin-left: 350px;
+    }
+
+    .social img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .botton-banner {
+        font-size: medium;
+    }
+}
+
+/* Screen less than 600px */
+
+@media screen and (max-width: 600px) {
+    .banner nav {
+        font-size: medium;
+        
+    }
+
+    #hero-img {
+        height: 600px;
+    }
+
+    #hero-msg {
+        font-size: medium;
+    }
+
+    .home-end {
+        display: contents;
+    }
+
+    .msg-end {
+        position: relative;
+        margin: auto;
+        width: 100%;
+    }
+
+    .social img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .botton-banner {
+        font-size: small;
+    }
+
+    .social-img {
+        width: 150px;
+        height: 120px;
+    }
+
+    .social-banner h1 {
+        font-size: larger;
+    }
+}
