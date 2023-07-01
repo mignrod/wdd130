@@ -402,3 +402,64 @@ footer {
         font-size: larger;
     }
 }
+
+@media screen and (max-width:400px) {
+    .marker {
+        font-size: 8px
+    }
+
+    .banner a {
+        font-size: smaller;
+        display: flow-root;
+    }
+
+    .banner img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #hero-img {
+        height: 500px;
+    }
+
+    .benefit-img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .msg-end {
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .social-img {
+        width: 120px;
+        height: 90px;
+    }
+
+    .social-banner {
+        height: 125px;
+        align-self: end;
+    }
+
+    .social img {
+        width: 30px;
+        height: 30px;
+    }
+    .social-banner h1 {
+        font-size: small;
+    }
+
+    .botton-banner {
+        font-size: 9px;
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        height: 235px;
+        display: block;
+        background: #3B7CB6;
+    }
+}
