@@ -48,6 +48,8 @@ nav {
 nav a {
     text-decoration: none;
     color: #0d0f0e;
+    font-weight: bold;
+    letter-spacing: 0.9px;
 }
 
 nav a:hover {
@@ -187,6 +189,15 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
+.social-banner h1 {
+    font-style: oblique;
+}
+
+.social-banner a:hover {
+    background: #0d0f0e;
+}
+
 .social-img {
     width: 200px;
     height: 150px;
@@ -208,4 +219,17 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
+}
+
+.botton-banner a {
+    color: #0d0f0e;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.botton-banner a:hover {
+    color: #f8a501;
+    background: #0d0f0e;
+    text-decoration: underline;
 }
