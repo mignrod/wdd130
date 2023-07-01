@@ -291,6 +291,21 @@ footer {
     text-decoration: underline;
 }
 
+.service-grid {
+    margin-top: 60px;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    gap: 10px 5px;
+}
+
+.card-img {
+    width: 500px;
+    height: 500px;
+}
+
 
 /* Change the display according to the screen size 1100px */
 
