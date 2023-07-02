@@ -28,6 +28,7 @@ body {
     width: 90px;
     margin-top: -15px;
     justify-content: center;
+    padding-left: 30px;
 }
 
 .banner {
@@ -38,7 +39,7 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-left: 30px;
+    
 }
 
 
@@ -613,19 +614,21 @@ footer {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:420px) {
     .marker {
-        font-size: 8px
+        font-size: 7px
     }
 
     .banner a {
-        font-size: smaller;
-        display: flow-root;
+        font-size: 10px;
+        
     }
 
     .banner img {
         width: 65px;
         height: 65px;
+        box-sizing: border-box;
+        padding-left: 0;
     }
 
     #hero-img {
