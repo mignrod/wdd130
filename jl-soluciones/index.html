@@ -12,22 +12,23 @@
 <div class="content">
     <header>
         <p class="marker">Miguelangel Rodriguez &copy; 2023</p>
-        <div class="banner">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>    
-            </nav>
-        <a class="logo-link" href="index.html"> 
-            <img class="logo" src="images/jl-logo.jpg" alt="JL Logo">
 
-        </a>
-
-        <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>    
             <a href="aboutus.html">About Us</a>
             <a href="contactus.html">Contact Us</a>
-        </nav>
-        </div>
 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+
+            <a class="logo-link" href="index.html"> 
+                <img class="logo" src="images/jl-logo.jpg" alt="JL Logo">
+    
+            </a>
+        </div>
+    
     </header>
     <div id="hero">
         <div id="hero-box">
@@ -101,5 +102,15 @@
         </section>
     </footer>
 </div>
+<script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+  </script>
 </body>
 </html>
