@@ -565,7 +565,16 @@ footer {
 
 /* Screen less than 750px */
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
+    .topnav a:hover {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .topnav a.active {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .benefit-img {
         width: 80%;
         height: 80%;
@@ -691,6 +700,18 @@ footer {
       margin: 0;
     }
 
+    .botton-banner {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        height: 235px;
+        display: block;
+        background: #3B7CB6;
+        
+    }
     
   }
 @media screen and (max-width:420px) {
