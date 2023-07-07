@@ -31,7 +31,7 @@ body {
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: -15px;
+
   }
   
   /* Style the links inside the navigation bar */
@@ -54,20 +54,14 @@ body {
   .topnav a:hover {
     background-color: #0d0f0e;
     color: #f8a501;
-    height: 100%;
-    text-align: center;
-    line-height: 90px;
+
+    
   }
   
-  .topnav a.logo-link:hover {
-    line-height: 27px;
-  }
   /* Add an active class to highlight the current page */
   .topnav a.active {
     background-color: #0d0f0e;
     color: #f8a501;
-    height: 100%;
-    line-height: 90px;
 
   }
   
@@ -84,15 +78,15 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 90px;
     grid-column: 3/4;
-    position: relative;
+    
 }
 
 #hero {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: -105.5px;
+    margin-top: -123.5px;
 }
 
 #hero-box {
@@ -603,20 +597,12 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-    .topnav.responsive {display: block;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      top: 8px;
-      right: 9px;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
     #hero-img {
         height: 600px;
+    }
+
+    .marker {
+        justify-content: left;
     }
 
     #hero-msg {
@@ -652,9 +638,55 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    /* .topnav a:not(:nth-of-type(1, 6)) {display: none;} */
+    .topnav a:nth-of-type(2) {
+        display: none;
+    }
+    .topnav a:nth-of-type(3) {
+        display: none;
+    }
+    .topnav a:nth-of-type(4) {
+        display: none;
+    }
+    .topnav a:nth-of-type(2) {
+        display: none;
+    }
+    .topnav a.icon {
+      display: block;
+      grid-column: 5/6;
+
+    }
+
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {display: block;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      top: 28px;
+      right: 12px;
+    }
+
+      .logo {
+        width: 60px;
+      }
+
+    #hero {
+        margin-top: -170px;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    
+  }
 @media screen and (max-width:420px) {
     .marker {
-        font-size: 7px
+        font-size: 8px
     }
 
 
