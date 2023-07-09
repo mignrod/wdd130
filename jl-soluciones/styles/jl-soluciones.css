@@ -714,11 +714,18 @@ footer {
     }
     
   }
-@media screen and (max-width:420px) {
+@media screen and (max-width:450px) {
     .marker {
         font-size: 8px
     }
 
+    #hero-msg {
+        margin-top: 25px;
+    }
+
+    #hero-box {
+        margin-top: 10px;
+    }
 
     #hero-img {
         height: 500px;
