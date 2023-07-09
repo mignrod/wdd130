@@ -54,7 +54,8 @@ body {
   .topnav a:hover {
     background-color: #0d0f0e;
     color: #f8a501;
-
+    margin-left: 40px;
+    margin-right: 40px;
     
   }
   
@@ -62,6 +63,8 @@ body {
   .topnav a.active {
     background-color: #0d0f0e;
     color: #f8a501;
+    margin-left: 40px;
+    margin-right: 40px;
 
   }
   
@@ -562,7 +565,16 @@ footer {
 
 /* Screen less than 750px */
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
+    .topnav a:hover {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .topnav a.active {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .benefit-img {
         width: 80%;
         height: 80%;
@@ -669,8 +681,13 @@ footer {
       right: 12px;
     }
 
-      .logo {
-        width: 60px;
+    .logo {
+        width: 70px;
+        margin: 0;
+      }
+
+      a.logo-link:hover {
+        margin: 0;
       }
 
     #hero {
@@ -680,8 +697,21 @@ footer {
       float: none;
       display: block;
       text-align: left;
+      margin: 0;
     }
 
+    .botton-banner {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        height: 235px;
+        display: block;
+        background: #3B7CB6;
+        
+    }
     
   }
 @media screen and (max-width:420px) {
