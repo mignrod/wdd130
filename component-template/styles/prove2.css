@@ -67,6 +67,10 @@ body {
     margin-right: 40px;
 
   }
+
+  .topnav a:active {
+    background: white;
+  }
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
