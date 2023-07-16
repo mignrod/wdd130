@@ -104,10 +104,11 @@ body {
     justify-self: center;
     align-self: center;
     font-family: "Kelly Slab";
-    margin-top: -100px;
+    margin-top: -20px;
     margin-left: 10px;
     color: #0d0f0e;
     font-size: 30px;
+    
 }
 
 #hero-img {
@@ -117,6 +118,7 @@ body {
 
 #hero-msg h3 {
     text-align: center;
+
 }
 
 .button {
@@ -556,13 +558,17 @@ footer {
         height: 250px;
     }
 
+    .msg-end {
+        margin-left: 420px;
+    }
+
 }
 
 /* Screen size 900px */
 
 @media screen and (max-width: 900px) {
     .main-grid {
-        display: block;
+        width: auto;
     }
 
     .benefits {
@@ -570,7 +576,7 @@ footer {
     }
 
     .msg-end {
-        margin-left: 450px;
+        margin-left: 400px;
     }
 
     .diagnostic {
@@ -682,6 +688,17 @@ footer {
         margin-top: 0;
         font-size: 22px;
     }
+
+    .main-grid {
+        display: block;
+        height: auto;
+    }
+    
+    .home-end {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
 }
 
 /* Screen less than 600px */
@@ -689,7 +706,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     #hero-img {
-        height: 600px;
+        height: auto;
     }
 
     .marker {
@@ -707,7 +724,11 @@ footer {
     .msg-end {
         position: relative;
         margin: auto;
-        width: 100%;
+        width: 80%;
+    }
+
+    .flip-card {
+        margin: auto;
     }
 
     .social img {
@@ -742,6 +763,21 @@ footer {
     .about-jl h2 {
         margin-top: -10px;
         font-size: 19px;
+    }
+
+    #hero-msg {
+        grid-column: 1/7;
+        grid-row: 3/4;
+        margin-top: 20px;
+    }
+
+    #hero {
+        margin-top: -85px;
+    }
+
+    .benefit-img {
+        margin: 0 auto;
+        width: 100%;
     }
 
 }
@@ -786,9 +822,9 @@ footer {
         margin: 0;
       }
 
-    #hero {
+    /* #hero {
         margin-top: -170px;
-    }
+    } */
     .topnav.responsive a {
       float: none;
       display: block;
@@ -820,16 +856,11 @@ footer {
     }
 
     #hero-box {
-        margin-top: 10px;
+        margin-top: 85px;
     }
 
     #hero-img {
-        height: 500px;
-    }
-
-    .benefit-img {
-        margin: 0 auto;
-        width: 100%;
+        height: auto;
     }
 
     .msg-end {
