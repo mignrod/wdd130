@@ -1,14 +1,15 @@
 html, body {
-    height: 99%;
+    height: 100%;
     margin: 0;
 }
 
 main.slide {
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 .normal {
     display: flex;
-    width: auto;
+    /* width: auto; */
     justify-content: space-between;
 }
 
@@ -68,8 +69,7 @@ main.slide {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  height: 88%;
+  height: 50%;
   position: relative;
   margin: auto;
   
@@ -120,7 +120,7 @@ main.slide {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -152,4 +152,12 @@ main.slide {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Screen less than 350px */
+
+@media screen and (max-width: 350px) {
+    .normal p {
+        display: none;
+    }
 }
