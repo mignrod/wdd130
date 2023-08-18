@@ -12,6 +12,7 @@ main.slide {
     display: flex;
     /* width: auto; */
     justify-content: space-between;
+    height: 40px;
 }
 
 .logo img {
@@ -28,7 +29,7 @@ main.slide {
 .dropbtn {
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 12px;
     font-size: 14px;
     border: none;
   }
