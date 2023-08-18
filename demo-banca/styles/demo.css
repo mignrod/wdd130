@@ -1,3 +1,5 @@
 .rTabla {
     background: aquamarine;
+    border-spacing: 10px;
+    border: solid 1px rgb(32, 29, 29);
 }
