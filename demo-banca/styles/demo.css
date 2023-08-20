@@ -6,10 +6,11 @@ html, body {
 
 .bg {
     /* The image used */
-    background-image: url("demo-banca\images\img1.jpg");
+    background-image: url("https://mignrod.github.io/wdd130/demo-banca/images/img1.jpg");
   
     /* Full height */
     height: 100%; 
+    opacity: 0.9;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -180,14 +181,22 @@ main.slide {
 }
 
 .rTabla {
-    background: aquamarine;
+    background: transparent;
     border-spacing: 10px;
     border: solid 1px rgb(32, 29, 29);
     width: 50%;
-    font-size: medium;
+    font-size: 20px;
+    border: 2px solid black;
+
+    
 }
 
 .lotN {
     
     justify-content: center;
+}
+
+.horas {
+    background-color: rgba(7, 120, 7);
+    border-radius: 20%;
 }
