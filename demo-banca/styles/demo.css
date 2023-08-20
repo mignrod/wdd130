@@ -171,6 +171,7 @@ main.slide {
     border-spacing: 10px;
     border: solid 1px rgb(32, 29, 29);
     width: 50%;
+    font-size: medium;
 }
 
 .lotN {
