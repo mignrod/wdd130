@@ -173,12 +173,11 @@ main.slide {
 }
 
 .rTabla {
-    background: transparent;
+    background: #fbc85a;
     border-spacing: 10px;
-    border: solid 1px rgb(32, 29, 29);
     width: 50%;
     font-size: 20px;
-    border: 2px solid black;
+    border: 10px solid black;
 
     
 }
@@ -189,8 +188,17 @@ main.slide {
 }
 
 .horas {
-    background-color: rgba(7, 120, 7);
+    background-color: #fb5e67;
     border-radius: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.resultado {
+    background-color: #5e0000;
+    border-radius: 20%;
+    color: white;
 }
 
 
