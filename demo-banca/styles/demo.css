@@ -11,6 +11,7 @@ html, body {
     /* Full height */
     height: 100%; 
     opacity: 0.9;
+    grid-column: 1/3;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -172,20 +173,63 @@ main.slide {
   to {opacity: 1}
 }
 
-.rTabla {
+.tablas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    box-sizing: content-box;
+    width: 100%;
+
+    
+}
+
+.rTabla1 {
     background: #fbc85a;
-    border-spacing: 10px;
-    width: 50%;
-    font-size: 20px;
+    border-spacing: 7px;
+    width: 100%;
+    font-size: 18px;
     border: 10px solid black;
-
+    grid-column: 1/2;
+    grid-row: 1/2;
     
 }
 
-.lotN {
+.rTabla2 {
+    background: #fbc85a;
+    border-spacing: 7px;
+    width: 100%;
+    font-size: 18px;
+    border: 10px solid black;
+    grid-column: 2/3;
+    grid-row: 1/2;
     
-    justify-content: center;
 }
+
+.rTabla3 {
+    background: #fbc85a;
+    border-spacing: 7px;
+    width: 100%;
+    font-size: 18px;
+    border: 10px solid black;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+}
+
+.rTabla4 {
+    background: #fbc85a;
+    border-spacing: 7px;
+    width: 100%;
+    font-size: 18px;
+    border: 10px solid black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+
+/* .lotN {
+    height: fit-content;
+} */
 
 .horas {
     background-color: #fb5e67;
@@ -200,6 +244,7 @@ main.slide {
     border-radius: 20%;
     color: white;
 }
+
 
 
 
