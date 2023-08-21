@@ -1,167 +1,257 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 100%;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://mignrod.github.io/wdd130/demo-banca/images/img1.jpg");
+
+  /* Full height */
+  height: 100%; 
+  opacity: 0.9;
+  grid-column: 1/3;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main.slide {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .normal {
-    display: flex;
-    /* width: auto; */
-    justify-content: space-between;
-    height: 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .logo {
-    display: flex;
-    
+  display: flex;
+  
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: black;
-    color: white;
-    padding: 12px;
-    font-size: 14px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #ddd;}
+  background-color: black;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+}
 
-  * {box-sizing:border-box}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  height: 50%;
-  position: relative;
-  margin: auto;
-  
+height: 50%;
+position: relative;
+margin: auto;
+
 }
 /* Hide the images by default */
 .mySlides {
-  display: none;
+display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  
+right: 0;
+border-radius: 3px 0 0 3px;
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: black;
-  font-size: 25px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+color: black;
+font-size: 25px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+color: black;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
 
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+from {opacity: .4}
+to {opacity: 1}
 }
+
+.tablas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  box-sizing: content-box;
+  width: 100%;
+
+  
+}
+
+.rTabla1 {
+  background: #fbc85a;
+  border-spacing: 7px;
+  width: 100%;
+  font-size: 18px;
+  border: 10px solid black;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  
+}
+
+.rTabla2 {
+  background: #fbc85a;
+  border-spacing: 7px;
+  width: 100%;
+  font-size: 18px;
+  border: 10px solid black;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  
+}
+
+.rTabla3 {
+  background: #fbc85a;
+  border-spacing: 7px;
+  width: 100%;
+  font-size: 18px;
+  border: 10px solid black;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  
+}
+
+.rTabla4 {
+  background: #fbc85a;
+  border-spacing: 7px;
+  width: 100%;
+  font-size: 18px;
+  border: 10px solid black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  
+}
+
+/* .lotN {
+  height: fit-content;
+} */
+
+.horas {
+  background-color: #fb5e67;
+  border-radius: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.resultado {
+  background-color: #5e0000;
+  border-radius: 20%;
+  color: white;
+}
+
+
+
+
 
 /* Screen less than 350px */
 
 @media screen and (max-width: 350px) {
-    .normal p {
-        display: none;
-    }
+  .normal p {
+      display: none;
+  }
 }
