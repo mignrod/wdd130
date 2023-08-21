@@ -226,9 +226,9 @@ to {opacity: 1}
   
 }
 
-/* .lotN {
-  height: fit-content;
-} */
+.lotN img {
+  height: 60px;
+}
 
 .horas {
   background-color: #fb5e67;
@@ -242,6 +242,10 @@ to {opacity: 1}
   background-color: #5e0000;
   border-radius: 20%;
   color: white;
+}
+
+.ch {
+  text-decoration: underline;
 }
 
 
