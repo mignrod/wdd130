@@ -19,10 +19,7 @@ html, body {
   background-size: cover;
 }
 
-main.slide {
-  width: 100%;
-  height: auto;
-}
+
 .normal {
   display: flex;
   justify-content: space-between;
@@ -86,7 +83,7 @@ main.slide {
 
 /* Slideshow container */
 .slideshow-container {
-height: 50%;
+height: 90%;
 position: relative;
 margin: auto;
 
@@ -179,7 +176,6 @@ to {opacity: 1}
   box-sizing: content-box;
   width: 100%;
 
-  
 }
 
 .rTabla1 {
@@ -223,6 +219,33 @@ to {opacity: 1}
   border: 10px solid black;
   grid-column: 2/3;
   grid-row: 2/3;
+  
+}
+
+.tablas2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+  justify-items: center;  
+}
+
+.rTabla6 {
+  background: #fbc85a;
+  border-spacing: 7px;
+  font-size: 18px;
+  border: 10px solid black;
+  grid-row: 2/3;
+  
+}
+
+.rTabla7 {
+  background: #fbc85a;
+  border-spacing: 7px;
+  font-size: 18px;
+  border: 10px solid black;
+  grid-column: 2/3;
   
 }
 
