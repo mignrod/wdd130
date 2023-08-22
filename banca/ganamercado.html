@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana Mercado</title>
+    <link rel="stylesheet" href="styles/banca.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="flyer">
+    <header class="normal">
+        <div class="logo">
+            <a href="index.html"><img src="images/img1.jpg" alt="Logo"></a>
+           <p style="margin-left: 10px">Resultados del Día</p>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resultados-del-dia.html">Resultados del Día</a>
+              <a href="ganamercado.html">Gana Mercado</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          
+    </header>
+
+    <main class="bg" class="slide"> 
+    <div class="slideshow-container">
+
+        <!-- Tabla 1 -->
+        <div class="mySlides fade">
+            <div class="tablas">
+
+                <!-- El Terminalito -->
+                <div>
+                <table class="rTabla1" style="font-size: medium"><tr><th colspan="3" class="lotN"><img src="images/LogoTerminalito.png" style="width: 100px" alt="logo"></th><th colspan="5"><p>EL TERMINALITO</p></th></tr>
+                    <tr><th colspan="3" class="ch">Horario</th><th class="ch" colspan="5">Terminal</th></tr>
+                    <tr><th colspan="3" class="horas">9:15AM</th><th class="resultado" colspan="5">31</th></tr>
+                    <tr><th colspan="3" class="horas">10:15AM</th><th class="resultado" colspan="5">62</th></tr>
+                    <tr><th colspan="3" class="horas">11:15AM</th><th class="resultado" colspan="5">97</th></tr>
+                    <tr><th colspan="3" class="horas">12:15PM</th><th class="resultado" colspan="5">44</th></tr>
+                    <tr><th colspan="3" class="horas">1:15PM</th><th class="resultado" colspan="5">78</th></tr>
+                    <tr><th colspan="3" class="horas">3:15PM</th><th class="resultado" colspan="5">15</th></tr>
+                    <tr><th colspan="3" class="horas">4:15PM</th><th class="resultado" colspan="5">84</th></tr>
+                    <tr><th colspan="3" class="horas">5:15PM</th><th class="resultado" colspan="5">02</th></tr>
+                    <tr><th colspan="3" class="horas">6:15PM</th><th class="resultado" colspan="5">50</th></tr>
+                    <tr><th colspan="3" class="horas">7:15PM</th><th class="resultado" colspan="5">-</th></tr>
+                    
+                    </table> 
+                </div>
+    
+                <!-- Ñapa Gana -->
+                <div>
+                    <table class="rTabla2" style="font-size: medium"><tr><th colspan="3" class="lotN"><img src="images/tripletachira.png" style="width: 100px" alt="logo"></th><th colspan="5"><p>ÑAPA GANA</p></th></tr>
+                    <tr><th colspan="3" class="ch">Horario</th><th class="ch" colspan="5">Terminal</th></tr>
+                    <tr><th colspan="3" class="horas">9:00AM</th><th class="resultado" colspan="5">04</th></tr>
+                    <tr><th colspan="3" class="horas">10:00AM</th><th class="resultado" colspan="5">19</th></tr>
+                    <tr><th colspan="3" class="horas">11:00AM</th><th class="resultado" colspan="5">42</th></tr>
+                    <tr><th colspan="3" class="horas">12:00PM</th><th class="resultado" colspan="5">86</th></tr>
+                    <tr><th colspan="3" class="horas">1:00PM</th><th class="resultado" colspan="5">18</th></tr>
+                    <tr><th colspan="3" class="horas">3:00PM</th><th class="resultado" colspan="5">32</th></tr>
+                    <tr><th colspan="3" class="horas">4:00PM</th><th class="resultado" colspan="5">92</th></tr>
+                    <tr><th colspan="3" class="horas">5:00PM</th><th class="resultado" colspan="5">31</th></tr>
+                    <tr><th colspan="3" class="horas">6:00PM</th><th class="resultado" colspan="5">83</th></tr>
+                    <tr><th colspan="3" class="horas">7:00PM</th><th class="resultado" colspan="5">-</th></tr>
+                        </table> 
+                </div>
+    
+            </div>
+        </div>
+    
+        <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        
+          </div>
+
+    </div>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 10000); // Change image every 10 seconds
+        }
+    </script>
+        <!-- <script>
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        </script> -->
+</body>
+</html>
