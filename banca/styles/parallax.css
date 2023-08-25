@@ -1,0 +1,52 @@
+.normal {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+}
+
+.logo {
+    align-self: center;
+}
+
+.logo img {
+    height: 42px;
+    width: 60px;
+    
+}
+
+* {box-sizing:border-box}
+
+.search-button {
+    align-self: center;
+}
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    padding: 10px;
+    font-size: 25px;
+    background: transparent;
+    color: #000;
+    border: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url('https://mignrod.github.io/wdd130/banca/images/banner1.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
