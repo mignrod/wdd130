@@ -1,29 +1,279 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template 1</title>
+  <meta charset="UTF-8">
+  
 
-    <link rel="stylesheet" href="styles/tmp.css">
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
 
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+  
+
+  <title>CodePen - Handwriting  Animation (SVG + CSS)</title>
+
+    <link rel="canonical" href="https://codepen.io/marinamcpeak/pen/XYNdvd">
+  
+  
+  
+  
+<style>
+body {
+  margin:0;
+	background:#000;
+	text-align:center;
+}
+
+#svgwrapper {
+  display:inline-block;
+  width:400px;
+  height:200px;
+  stroke: white;
+  fill: none;
+  position: relative;
+}
+
+.logo-path {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: calc(20% + 20px);
+}
+
+.logo-path {
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 2400;
+}
+
+.underline {
+    stroke-width: 20;
+    animation: letter-animation 5s linear forwards;
+    animation-delay: 6.9s;
+}
+
+.i-2 { /* Mar(i)na */
+    stroke-width: 12;
+    animation: letter-animation 10s linear forwards;
+    animation-delay: 6.3s;
+}
+
+.d-2 { /* Mignr(o)d */
+    stroke-width: 20;
+    animation: letter-animation 8s linear forwards;
+    animation-delay: 5.9s;
+}
+
+.d-1 { /* Mignr(o)d */
+    stroke-width: 18;
+    animation: letter-animation 9s linear forwards;
+    animation-delay: 4.8s;
+}
+
+.o-2 { /* Mignr(o)d */
+    stroke-width: 10;
+    animation: letter-animation 7s linear forwards;
+    animation-delay: 4.45s;
+}
+
+.o-1 { /* Mignr(o)d */
+    stroke-width: 8;
+    animation: letter-animation 6s linear forwards;
+    animation-delay: 4.35s;
+}
+
+
+.r-2 { /* Mign(r)od */
+    stroke-width: 10;
+    animation: letter-animation 8s linear forwards;
+    animation-delay: 3.91s;
+}
+
+.r-1 { /* Mign(r)od */
+    stroke-width: 9;
+    animation: letter-animation 8s linear forwards;
+    animation-delay: 3.75s;
+}
+
+.n-2 { /* Mig(n)rod */
+    stroke-width: 15;
+    animation: letter-animation 8s linear forwards;
+    animation-delay: 3.35s;
+}
+
+.n-1 { /* Mig(n)rod */
+    stroke-width: 10;
+    animation: letter-animation 6s linear forwards;
+    animation-delay: 3.2s;
+}
+.g-2 { /* Mi(g)nrod */
+    stroke-width: 8;
+    animation: letter-animation 6s linear forwards;
+    animation-delay: 2.97s;
+}
+
+.g-1 { /* Mi(g)nrod */
+    stroke-width: 10;
+    animation: letter-animation 7s linear forwards;
+    animation-delay: 2.55s;
+}
+
+.i-1 { /* M(i)gnrod */
+    stroke-width: 9;
+    animation: letter-animation 6s linear forwards;
+    animation-delay: 2s;
+}
+
+.M-3 { /* (M)ignrod */
+    stroke-width: 20;
+    animation: letter-animation 5s linear forwards;
+    animation-delay: 1.53s;
+}
+
+.M-2 { /* (M)ignrod */
+    stroke-width: 20;
+    animation: letter-animation 5s linear forwards;
+    animation-delay: 1.05s;
+}
+
+.M-1 { /* (M)ignrod */
+    stroke-width: 18;
+    animation: letter-animation 5s linear forwards;
+}
+
+@keyframes letter-animation {
+    0% {
+        stroke-dashoffset: 2600;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
 </head>
-<body>
-    <div class="grid-container">
-        <div class="grid-img"> <img src="images/1.png" alt="1"> </div>
-        <h1 class="grid-item"> 1 </h1>
-        <h2 class="grid-item"> 2 </h2>
-        <div class="grid-item"> 3 </div>
-        <div class="grid-item"> 4 </div>
-        <div class="grid-item"> 5 </div>
-        <div class="grid-item"> 6 </div>
-        <div class="grid-item"> 7 </div>
-        <div class="grid-item"> 8 </div>
-        <div class="grid-item"> 9 </div>
-        <div class="grid-item"> 10 </div>
-        
 
-    </div>
+<body translate="no">
+  <div id="svgwrapper" class="load-logo">
+    <svg class="logo-path" viewBox="0 0 592.85 262.79">
+        <defs>
+            <clipPath id="clip-underline">
+                <path d="M586,588.22c31.44-7,78.19-14.82,97.09-13.81a7,7,0,0,0,.34,3.53c.94,2.22,7.6.32,8.94,0,5.14-1.25,8.34-4.76,8.34-6,0-9.76-14.67-12.42-21.65-12.42-17.25,0-44.55,4.81-69,11.1l-3.4.88c-22,5.86-41.2,12.83-47.65,18.36-3.66,3.14-4.65,7.56-2.13,6.39,3.56-1.67,12.28-4.1,23.66-6.75" transform="translate(-345.54 -373.68)" />
+                <path d="M685.47,566.39c.08-.08.1-.06.09,0Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-i-2">
+                <path d="M 577.23 495.61 c 0.45 6.67 3.58 10.87 6.92 10.87 c 5.33 0 13.84 -16.37 13.84 -26 s -3.72 -15.17 -10.78 -15.17 S 572 478.27 572 487.19 C 572 492.55 574.93 495.15 577.23 495.61 Z m 7.59 -1.77 c -2.38 0 -0.07 -10 2.24 -15.69 a 4.18 4.18 0 0 1 2.55 -1.08 C 594.67 477.07 587.88 493.84 584.82 493.84 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-d-2">
+                <path d="M 867 495 C 867 519.09 819.22 546.11 792.08 546.11 S 771.08 516.11 771.08 513.9 C 771.08 512.51 769.57 510.52 768.22 509.59 C 762.47 507.33 765 528 764.73 527.8 C 765.95 541.08 771.85 567.13 799.96 567.13 C 848.4 567.13 874.35 525.94 874.35 501.66 C 874 489 867 482 867 495 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-d-1">
+                <path d="M 759 553 C 752 557 751 554 750 550 C 748.33 549.64 759 508.83 763.84 508.83 C 764.33 508.64 765.33 512.64 764.33 518.64 C 765.33 521.64 765.33 521.64 765.33 521.64 C 766.33 522 767.18 520.72 767.78 519.47 C 768.78 511.03 768.02 503.13 763.96 503.13 C 749.41 503.13 733 556 748.52 561.33 C 746 560 759 571 771 546 C 784 524 790 459 789 427 C 789 413 783 403 770 427 C 757 456 764 505 765 528 C 765 528 769 541 759 553 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-o-2">
+                <path d="M 732.1 516.57 a 9.84 9.84 0 0 0 -3.78 0.54 a 111.35 111.35 0 0 1 -4 14.29 h 0 c -3.66 7.81 -8.25 16 -9.86 16 c -0.27 -2.4 -0.48 -2.79 0.39 -6.91 a 8.65 8.65 0 0 1 -6.84 0 c -1.22 10 -0.06 18.94 4.85 18.32 c 5.68 0 13.34 -17.41 17.94 -27.35 l 3.2 -11.08 c 0 -0.38 1 -5.38 1 -4.38 c 1 -10 -3 -16 -5 -15 c -1 -3 -13 5 -17 20 c -0.6667 2 -1.3333 4 -2 6 a 1 1 0 0 0 0 1 c 0 0 10 -5 6 4 s 14 7 38 -14 q 5 -7 11 -12 c 0 -1 -1 -6 -9 1 c -3 6 -39 32 -37 16 c 1 -2 4 -16 9 -17 c 2 4 -1 10 -1 13 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-o-1">
+                <path d="M 721 550 c 0.08 -0.95 -0.56 -5.2 -6.49 -2.51 a 1.17 1.17 0 0 1 0.16 -0.13 c -2.84 0 9 -41.17 13.84 -41.17 c 1.68 0 1.35 4.36 0.34 9.47 c 0 1.37 -1.85 2.34 1 3 c 1.15 0.34 4.15 -1.66 4.15 -1.66 c 4 -7 0.24 -16.34 -3.82 -16.34 c -17.18 -0.66 -30.18 58.34 -17.18 58.34 C 715 559 720 553 721 551 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-r-2">
+                <path d="M 686 512 c 4 2.6 7 5.53 7 9.1 c 0 9.94 -11.59 35.71 -11.59 42.81 c 0 6.34 5.94 12.8 11.38 14.11 c 0 0 2.21 0.98 4.21 -1.02 s -2.24 -10.33 -2.24 -10.33 c 2.97 -10.81 9.11 -40.74 3.35 -50.63 a 40.85 40.85 0 0 0 -11.86 -12.36 c -1.48 -6.71 -5.51 -10.89 -8.72 -10.89 c -5.33 0 -7.63 4.61 -7.63 6.39 c 0 3.58 6.37 6.63 12.53 10.11 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-r-1">
+                <path d="M 682.606 504.792 c -1.48 -6.71 -5.51 -10.89 -8.72 -10.89 a 2.33 2.33 0 0 0 -2.24 2.94 c 0.4 2.65 5.22 7.9 6.81 12.43 c -0.05 11.23 -0.365 12.191 1.64 14.446 c 5.72 0 3.886 -15.54 3.009 -18.047 A 43.43 43.43 0 0 0 682.732 505.293 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-n-2">
+                <path d="M 680.099 514.76 c -2.47 4.1 -14 23.44 -18.26 23.44 s -0.67 -29 -11 -29 c -8.58 0 -17.38 15.86 -22.66 26.24 a 0.7 0.7 0 0 1 -0.12 0.34 l -0.17 0.22 v 0 h 0 c -0.13 0.19 -0.28 0.37 -0.42 0.56 l -0.07 0.09 c -2.37 3.08 -5.69 5.53 -7.61 8.92 a 45.3 45.3 0 0 0 -0.75 5.66 c 0 4.52 3.33 7.05 5.19 5.19 s 21.56 -39 26.75 -39 s -3.19 33 6.53 33 c 5.83 0 12.67 -9.73 17.34 -18.38 c 2.49 -3.49 4.74 -6.49 6.66 -9 c 0 0 0.81 -1.06 1.92 -2.43 h 0 h 0 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-n-1">
+                <path d="M 625.73 549.88 c 0.17 -4.35 2.06 -13.92 2.06 -13.92 c 2.29 -9.68 4.73 -22.8 4.73 -25.27 s -1.67 -3.09 -3.2 -1.56 c -3.29 3.29 -10.38 37.53 -10.38 42 s 3.33 7.05 5.19 5.19 A 13.28 13.28 0 0 0 625.495 550.104 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-g-2">
+                <path d="M 617.341 539.216 c -1.48 -6.71 -5.51 -10.89 -8.72 -10.89 a 2.33 2.33 0 0 0 -2.24 2.94 c 0.4 2.65 5.22 7.9 2.62 18.168 l 0.33 1.13 c -0.05 11.23 -15.07 42.77 -19.28 42.77 c -2.3 0 -1.06 -10.29 -1.06 -13.49 c 0 -1.84 -2.35 -3.9 -4.34 -4.57 c 0 0 -2.42 3.64 -1.33 14.49 c 1.42 6.5 4.16 14 8.86 14 c 5.72 0 19.92 -33.3 23.83 -53.69 A 43.43 43.43 0 0 0 616.898 542.762 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-g-1">
+                <path d="M 600.33 560.64 c 23.5 -42.327 9.022 -50.134 -4.163 -3.123 a 1.17 1.17 0 0 1 -0.932 0.725 c -2.84 0 9 -41.17 13.84 -41.17 c 1.68 0 1.35 4.36 0.34 9.47 c 0 1.37 0.22 2.71 1 3 c 1 0.36 1.85 -0.92 2.45 -2.17 c 1 -8.44 0.24 -16.34 -3.82 -16.34 c -14.55 0 -28.74 58.2 -15.547 58.477 C 596.654 568.107 602.313 558.817 600.33 560.64 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-i-1">
+                <path d="M 578.3 516.71 c -4.66 0 -19 30.87 -29.23 42.32 h 0 l -0.08 0.07 c -0.36 0.41 -0.72 0.79 -1.07 1.15 l -8.17 6.92 a 14.94 14.94 0 0 0 6.93 4.29 l 3.39 -0.88 c 4.81 -5.22 18.3 -27.18 24.71 -39 c -0.91 4.23 -1.44 8.65 -0.8 11.08 c 1.92 7.22 7.77 5.32 7.77 2.93 c 0 -5.85 1.26 -17.75 1.26 -23.43 C 583 519 581.4 516.71 578.3 516.71 Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-M-3">
+                <path d="M585.14,583.66c-2-.16-4.6,5.85-4.6,5.85C574.54,600,563.7,615,546.33,615c-31.94,0-26.82-88.51,24.46-142.59l-.12,0,2.76-2.84C548.12,480,535.63,497,535.63,497l.76-.53-.71.76c-21.52,35.76-48,127,6.64,126,19.8-.39,36.13-21.6,43.67-35C586,588.27,587.14,583.81,585.14,583.66Z" transform="translate(-345.54 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-M-2">
+                <path d="M569,464C540.3,464,458.6,580.53,444.11,600.19c-2-9.87-1.67-22.06.56-35.58l4.61-20.89c2.59-9.62,5.88-19.6,9.69-29.65a1.15,1.15,0,0,0-.06-.17,19.34,19.34,0,0,0-1.28-2,11.43,11.43,0,0,0-3.27-2.43c-2.46-1.21-4.4-.81-6.94.13-.87.32-1.71.68-2.55,1.06-6,17.15-10.3,34.37-12.13,50.65l-1,17h0c0,28.36,10.42,35.19,14,31.64,3.71-3.7,59.48-84.13,90.25-113.2,0,0,26.33-18.95,32.85-22.26h0c1.51-1.65,3.06-3.29,4.65-4.88C576.58,466.48,573.21,464,569,464Z" transform="translate(-345.46 -373.68)" />
+            </clipPath>
+            <clipPath id="clip-M-1">
+                <path d="M556.62,373.68c-37,0-93.43,75.7-115.53,148.54a11.94,11.94,0,0,0,3.3,4c2.59,1.77,5.42,1,8.22.37a2.1,2.1,0,0,1,.48-.06,9.7,9.7,0,0,0,1.77-1.07l0,0c22.41-65.8,70.66-139.77,99.41-139.77,19.3,0-42.52,89.67-105,158.07l-16.54,17.57c-29.92,30.77-58.33,54.29-76.21,58.11,2.76-7.2,10.4-18.21,10.4-20.72,0-6.92-21.47,12-21.47,19.17s1.51,18.62,11.62,18.62c12.63,0,41.89-24.29,74.66-58.18h0l12.93-13.69c58.11-62.8,121.62-148.85,121.62-181.26C566.29,379.89,563.54,373.68,556.62,373.68Z" transform="translate(-345.46 -373.68)" />
+            </clipPath>
+        </defs>
+        <g clip-path="url(#clip-underline)">
+            <path class="logo-path underline" d="M 556 595 C 571 580 651 560 682 562 S 689 581 690 576 L 686 576 V 572 C 644 575 604 581 557 596" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-i-2)">
+            <path class="logo-path i-2" d="M 560 484 s 9.73 10.39 15 4.78 s 4.9 -18.63 12.26 -18.3 s 8.52 10.72 5.72 17.81 s -7.43 12.53 -10.56 10.88 s -2.64 -16.82 0 -21.93" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-d-2)">
+            <path class="logo-path d-2" d="M 767 511 s -1 20.11 3.74 29.51 s 16.74 18.23 30.1 16.46 s 34.63 -7.71 48.15 -20.58 s 22.92 -24.57 21.6 -35.12 s -5.27 -16.17 -5.27 -16.17" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-d-1)">
+            <path class="logo-path d-1" d="M 766 515 c -0.3333 -3 -0.6667 -6 -1 -9 c -3 -3 -17 13 -19 36 c -2 9 1 13 6 17 c 26 2 34 -117 31 -140 q -2 -4 -7 5 c -7 18 -12 45 -7 104" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-o-2)">
+            <path class="logo-path o-2" d="M 715 553 c 6 -7 18 -29 17 -46 c -1 -11 -10 0 -13 8 c -0.6667 1.3333 -1.3333 2.6667 -2 4 c -6 17 7 13 9 12 s 23 -9 38 -26" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-o-1)">
+            <path class="logo-path o-1" d="M 716 524 s -4.32 15.9 -4.68 21.08 s 0.14 9 1.65 10 s 5 -3.89 6.12 -5.62 a 40.82 40.82 0 0 0 2.46 -4.6" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-r-2)">
+            <path class="logo-path r-2" d="M 678 495 s -6.75 0.95 -5.17 3.8 s 14.88 9.07 17.42 12.24 s 7.6 9.61 6.44 18.37 s -4.75 19.42 -6 24.48 s -3.06 11.3 -1.69 14.89 s 3 7.22 6 8.22" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-r-1)">
+            <path class="logo-path r-1" d="M 679.896 522.001 s 3.387 -8.775 0.924 -15.394 s -6.465 -13.546 -5.388 -12.007" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-n-2)">
+            <path class="logo-path n-2" d="M 622.835 551.511 s 7.39 -12.57 10.08 -16.58 s 7.12 -13.09 10.29 -16.46 s 11.19 -10.35 12.77 3.16 s 0.94 20.14 5.34 21.85 s 11 -11.82 13.56 -15.83 s 10.76 -17.42 9.13 -15.096" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-n-1)">
+            <path class="logo-path n-1" d="M 631.03 509.009 s -9.29 43.27 -10.571 48.585" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-g-2)">
+            <path class="logo-path g-2" d="M 608.136 530.277 c 6.168 7.117 12.969 16.765 -15.184 68.325 a 1 1 0 0 1 -1.107 0.633 c -7.75 -1.898 -5.694 -15.658 -5.536 -21.194" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-g-1)">
+            <path class="logo-path g-1" d="M 608.56 530.41 s 2.23 -8.42 1.37 -12.09 s -2.59 -5.47 -6.34 -2.3 s -8.13 13.75 -9.275 18.369 s -4.32 15.9 -4.196 21.721 s 0.14 9 2.541 9.815 s 5 -3.89 6.095 -5.721 c 5.392 -9.015 8.081 -15.5 13.142 -29.418" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-i-1)">
+            <path class="logo-path i-1" d="M542.62,562.41s1.48,5.06,4.86,4.85,6-6.23,8.33-10.24,9.61-17.2,11.51-20.58,11.61-17.73,11.61-17.73,1.37,3.48,0,11.61-.32,16,1.79,19" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-M-3)">
+            <path class="logo-path M-3" d="M573.43,469.59s-23.77,18.89-27.36,25.26-13.75,24.91-17.14,33.88S519.76,558,519.17,566s-1.2,24.91,1,32.68,10,19.13,18.93,19.73S562,615.62,570,606.65s11.55-13.15,16.34-25.31" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-M-2)">
+            <path class="logo-path M-2" d="M448.77,516.76s-8.3,33.91-9.71,44.68-3.18,40.26,4.85,45.74c0,0,24.46-33.91,33.29-45.21s29.67-38.15,34.61-44,21.73-25.26,28.79-31.26,23.84-19.6,35.32-20.49" transform="translate(-345.54 -373.68)" />
+        </g>
+        <g clip-path="url(#clip-M-1)">
+            <path class="logo-path M-1" d="M367.6,596.83s-18.23,18.34-18.11,22.81,2.23,9.77,5.17,10.47,31.53-14.2,61.73-44.21A1024.83,1024.83,0,0,0,490.72,503c16.29-20.47,43.91-56.24,53.65-73.73s20.67-39.55,17.09-46.5-11.13-3.58-14.7-2-33,20.47-46.51,39.75-36.76,64-41.33,74.32-9.74,27.62-9.74,27.62" transform="translate(-345.54 -373.68)" />
+        </g>
+    <!-- <image src="images/marina-whiteText.png" xlink:href=""> -->
+    </svg>
+</div>
+  
+  
 </body>
+
 </html>
