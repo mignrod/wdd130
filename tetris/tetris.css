@@ -9,19 +9,27 @@ body {
     display: grid;
     place-content: center;
     height: 100vh;
+    color: white;
     
 }
 
-/* .board {
-    background-color: black;
-    width: 300px;
-    height: 500px;
+section {
+    position: absolute;
+    background: black;
+    width: 100vw;
+    height: 100hw;
+    top: 0;
+    inset: 0;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-
+    font-size: 48px;
+    place-content: center;
 }
 
-.canva {
-    display: block;
-} */
+.dev {
+    font-size: 18px;
+    position: absolute;
+    place-self: flex-end;
+    bottom: 10px;
+    right: 10px;
+    
+}

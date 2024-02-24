@@ -2,10 +2,15 @@
 // Initialize canvas
 const canvas = document.querySelector('canvas');
 const context = canvas.getContext('2d');
+const $score = document.querySelector('span');
+const $section = document.querySelector('section');
+
 
 const BLOCK_SIZE = 20;
 const BOARD_WIDTH = 14;
 const BOARD_HEIGHT = 30;
+
+let score = 0;
 
 canvas.width = BLOCK_SIZE * BOARD_WIDTH;
 canvas.height = BLOCK_SIZE * BOARD_HEIGHT;
@@ -13,40 +18,11 @@ canvas.height = BLOCK_SIZE * BOARD_HEIGHT;
 context.scale(BLOCK_SIZE, BLOCK_SIZE);
 
 // Making the principal board
-const board = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1]
-    
-]
+const board = createBoard(BOARD_WIDTH, BOARD_HEIGHT)
 
+function createBoard (width, height) {
+    return Array(height).fill().map(() => Array(width).fill(0))
+}
 // Making piece
 const piece = {
     position: {x: 5, y:5},
@@ -56,8 +32,58 @@ const piece = {
     ]
 }
 
+// Ramdom pieces
+const PIECES = [
+    [
+        [1, 1],
+        [1, 1]
+    ],
+    [
+        [1, 1, 1, 1]
+    ],
+    [
+        [0, 1, 0],
+        [1, 1, 1]
+    ],
+    [
+        [1, 0, 0],
+        [1, 1, 1]
+    ],
+    [
+        [1, 1, 0],
+        [0, 1, 1]
+    ]
+]
+
 // Run the game loop
-function update () {
+// function update () {
+//     draw();
+//     window.requestAnimationFrame(update);
+
+// }
+
+let counterDrop = 0;
+let lastTime = 0;
+
+function update (time = 0) {
+    const deltaTime = time - lastTime;
+    lastTime = time;
+
+    counterDrop += deltaTime;
+
+    if (counterDrop > 1000) {
+        piece.position.y++;
+        counterDrop = 0;
+
+        if(CheckCollision()) {
+            piece.position.y--;
+            solidPiece();
+            removeRows();
+
+        }
+
+    }
+
     draw();
     window.requestAnimationFrame(update);
 
@@ -85,6 +111,7 @@ function draw () {
             }
         })
     })
+    $score.innerText = score;
 
 }
 
@@ -109,7 +136,26 @@ document.addEventListener('keydown', event => {
             piece.position.y--
             solidPiece();
             removeRows();
-            
+
+        }
+    }
+
+    if (event.key === 'ArrowUp') {
+        const rotatePiece = []
+
+        for (let i=0; i < piece.shape[0].length; i++) {
+            const row = [];
+            for (let j = piece.shape.length - 1; j >= 0; j--) {
+                row.push(piece.shape[j][i])
+            }
+
+            rotatePiece.push(row);
+        }
+        const previousShape = piece.shape;
+        piece.shape = rotatePiece;
+        if (CheckCollision()) {
+            piece.shape = previousShape;
+
         }
     }
 
@@ -136,9 +182,19 @@ function solidPiece () {
         })
     })
 
+    // Reset piece position
     piece.position.x = 0;
     piece.position.y = 0;
 
+    // get the ramdon pieces
+    piece.shape = PIECES[Math.floor(Math.random() * PIECES.length)]
+
+    //game over
+    if (CheckCollision()) {
+        window.alert('Sorry! Game Over!!!');
+        board.forEach((row) => row.fill(0));
+
+    }
 }
 
 function removeRows () {
@@ -153,8 +209,21 @@ function removeRows () {
         board.splice(y, 1)
         const newRow = Array(BOARD_WIDTH).fill(0)
         board.unshift(newRow);
+        score += 10;
+
 
     })
 }
 
-update()
+$section.addEventListener('click', () => {
+    update()
+
+    $section.remove()
+    const audio = new window.Audio('tetris.mp3');
+    audio.volume = 0.5;
+    audio.play();
+
+
+})
+
+
