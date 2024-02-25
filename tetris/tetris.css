@@ -17,12 +17,11 @@ section {
     position: absolute;
     background: black;
     width: 100vw;
-    height: 100hw;
-    top: 0;
     inset: 0;
     display: grid;
     font-size: 48px;
     place-content: center;
+    text-align: center;
 }
 
 .dev {
@@ -32,4 +31,8 @@ section {
     bottom: 10px;
     right: 10px;
     
+}
+
+section #text {
+    place-content: center;
 }

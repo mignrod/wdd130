@@ -35,33 +35,42 @@ const piece = {
 // Ramdom pieces
 const PIECES = [
     [
+        // Square 2x2
         [1, 1],
         [1, 1]
     ],
     [
+        //Long line
         [1, 1, 1, 1]
     ],
     [
+        // T form
         [0, 1, 0],
         [1, 1, 1]
     ],
     [
+        // L 1
         [1, 0, 0],
         [1, 1, 1]
     ],
     [
+        // Curly 1
         [1, 1, 0],
         [0, 1, 1]
+    ],
+    [
+        // Curly 2
+        [0, 1, 1],
+        [1, 1, 0]
+    ],
+    [
+        // L 2
+        [0, 0, 1],
+        [1, 1, 1]
     ]
 ]
 
 // Run the game loop
-// function update () {
-//     draw();
-//     window.requestAnimationFrame(update);
-
-// }
-
 let counterDrop = 0;
 let lastTime = 0;
 
@@ -89,6 +98,7 @@ function update (time = 0) {
 
 }
 
+// Funtion to draw pieces and board
 function draw () {
     context.fillStyle = '#000';
     context.fillRect(0, 0, canvas.width, canvas.height);
@@ -115,6 +125,7 @@ function draw () {
 
 }
 
+// Event listeners for key control
 document.addEventListener('keydown', event => {
     if (event.key === 'ArrowLeft') {
         piece.position.x--;
@@ -161,6 +172,7 @@ document.addEventListener('keydown', event => {
 
 })
 
+// Check collisions of pieces
 function CheckCollision () {
     return piece.shape.find((row, y) => {
         return row.find((value, x) => {
@@ -172,6 +184,7 @@ function CheckCollision () {
     })
 }
 
+// Solidify pieces once collisions happend
 function solidPiece () {
     piece.shape.forEach((row, y) => {
         row.forEach((value, x) => {
@@ -197,6 +210,7 @@ function solidPiece () {
     }
 }
 
+// Remove complete rows
 function removeRows () {
     const rowsRemoved = [];
     board.forEach((row, y) => {
@@ -215,15 +229,37 @@ function removeRows () {
     })
 }
 
-$section.addEventListener('click', () => {
-    update()
+// Opening section of the game. Reproduce audio when click
+// $section.addEventListener('click', () => {
+//     update()
 
-    $section.remove()
-    const audio = new window.Audio('tetris.mp3');
+//     $section.remove()
+//     const audio = new window.Audio('tetris.mp3');
+//     audio.volume = 0.5;
+//     audio.play();
+
+
+// })
+
+$section.addEventListener('click', () => {
+    update();
+    $section.remove();
+
+    const audios = [
+        'Tetris1.mp3',
+        'Tetris - Karinka.mp3',
+        'Tetris - Troika.mp3',
+        'Tetris - Bradinsky.mp3'
+
+    ]
+
+    let actualAudio = audios[Math.floor(Math.random() * audios.length)];
+    console.log(actualAudio)
+    let audio = new window.Audio(actualAudio);
     audio.volume = 0.5;
     audio.play();
-
-
+    
+    
 })
 
 
